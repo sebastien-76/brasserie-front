@@ -2,5 +2,9 @@
     text-align: center;
     margin-top: 15rem;
     font-size: 3rem;
-    color: (--dark-slate-grey);
+    color: var(--dark-slate-grey);
+    height: 100vh;
+    background-image: url('../../assets/images/liane_houblon_40.png');
+    background-repeat: no-repeat;
+    background-position: center;
 }

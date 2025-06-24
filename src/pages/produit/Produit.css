@@ -1,13 +1,15 @@
 .titreProduits {
     text-align: center;
-    margin: 5vh 0 10vh 0;
+    margin: 20vh 0 10vh 0;
     font-size : 2rem;
     color: var(--dark-slate-grey);
+    font-family: 'Almendra', cursive;
 }
 
 .container {
     display: flex;
     width: 100vw;
+    height: 100vh;
     justify-content: space-between;
 }
 
@@ -15,6 +17,10 @@
     width: 20vw;
     display: flex;
     flex-direction: column;
+    background-image: url('../../assets/images/liane_houblon_40.png');
+    background-repeat: no-repeat;
+    background-position-y: 25%;
+    background-size: contain;
 }
 
 .recherche {
@@ -29,6 +35,7 @@
     margin-top: 5rem;
     color: var(--dark-slate-grey);
     font-size: 2rem;
+    font-family: 'Almendra', cursive;
 }
 
 .barre-recherche {
@@ -51,6 +58,7 @@
     margin-top: 5rem;
     color: var(--dark-slate-grey);
     font-size: 2rem;
+    font-family: 'Almendra', cursive;
 }
 
 .listeFiltres {
@@ -61,8 +69,15 @@
     margin-right: 0.5rem;
 }
 
+.listeFiltres label {
+    font-size: 1.2rem;
+    color: var(--dark-slate-grey);
+    font-weight: bold;
+}
+
 .grid-container {
     width: 80vw;
+    margin-right: 3rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
@@ -84,6 +99,7 @@
 .grid-item h2 {
     font-size: 2rem;
     font-weight: bold;
+    font-family: 'Almendra', cursive;
 }
 
 .grid-item p {

@@ -6,6 +6,7 @@ import { Recherche } from '../../composants/recherche/Recherche'
 import { Filtre } from '../../composants/filtre/Filtre'
 import { Menu } from '../../composants/menu/Menu'
 import './Produit.css'
+import { Footer } from '../../composants/footer/Footer'
 
 export const Produit = () => {
 	/* Déclaration des états nécessaires */
@@ -69,10 +70,10 @@ export const Produit = () => {
 
 
 	return (
-		<div>
+		<div className="pageProduit">
 			<Menu />
 			
-			<TitrePage titre="Produits" classe="titreProduits" />
+			<TitrePage titre="Les produits" classe="titreProduits" />
 
 			<div className="container">
 				{/* Section de recherche et filtres */}
@@ -96,6 +97,8 @@ export const Produit = () => {
 					}
 				</div>
 			</div>
+
+			<Footer />
 
 		</div>
 	)
