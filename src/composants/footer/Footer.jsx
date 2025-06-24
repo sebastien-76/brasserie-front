@@ -21,7 +21,7 @@ export const Footer = () => {
 				<Link to='https://www.linkedin.com' target="_blank"><img src={linkedin} alt="linkedin" /></Link>
 			</div>
 			<div class="mentions">
-				Mentions Légales
+				<Link to='#' target="_blank" class="navLien">Mentions Légales</Link>
 			</div>
 		</div>
 	)

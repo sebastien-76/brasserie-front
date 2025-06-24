@@ -43,3 +43,7 @@ li {
     text-decoration: none;
     color: var(--orge);
 }
+
+.navLien:hover {
+    color: var(--dark-slate-grey);
+}

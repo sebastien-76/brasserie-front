@@ -1,7 +1,7 @@
 .titreProduits {
     text-align: center;
-    margin: 20vh 0 10vh 0;
-    font-size : 2rem;
+    margin: 20vh 0 7vh 0;
+    font-size : 3rem;
     color: var(--dark-slate-grey);
     font-family: 'Almendra', cursive;
 }
@@ -10,7 +10,7 @@
     display: flex;
     width: 100vw;
     height: 100vh;
-    justify-content: space-between;
+    justify-content: space-bet  ween;
 }
 
 .rechercheFiltre {
