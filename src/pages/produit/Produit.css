@@ -1,0 +1,95 @@
+.titreProduits {
+    text-align: center;
+    margin: 5vh 0 10vh 0;
+    font-size : 2rem;
+    color: var(--dark-slate-grey);
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+}
+
+.rechercheFiltre {
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.recherche {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.titreRecherche {
+    text-align: center;
+    margin-top: 5rem;
+    color: var(--dark-slate-grey);
+    font-size: 2rem;
+}
+
+.barre-recherche {
+    width: 70%;
+    height: 3.5vh;
+    margin-top: 2rem;
+    border-radius: 5px;
+    border: 1px solid var(--dark-slate-grey);
+}
+
+.filtre {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.titreFiltre {
+    text-align: center;
+    margin-top: 5rem;
+    color: var(--dark-slate-grey);
+    font-size: 2rem;
+}
+
+.listeFiltres {
+    margin-top : 2rem;
+}
+
+.listeFiltres input {
+    margin-right: 0.5rem;
+}
+
+.grid-container {
+    width: 80vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 20px;
+    font-size: 0.8em;
+    border-radius: 5px;
+    align-content: start;
+}
+
+.grid-item {
+    background-color: var(--orge);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--dark-slate-grey);
+    color: var(--dark-slate-grey);
+    text-align: center;
+}
+
+.grid-item h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.grid-item p {
+    font-size: 1.5rem;
+}
+
+.invisible {
+    display: none;
+}
