@@ -1,5 +1,4 @@
-import { useState } from 'react'
-import { Accueil } from './pages/Accueil/Accueil'
+import { Accueil } from './pages/accueil/Accueil'
 import { Produit } from './pages/produit/Produit'
 import './App.css'
 import { BrowserRouter as Router, Routes, Route, createBrowserRouter, RouterProvider } from 'react-router';
