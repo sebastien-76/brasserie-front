@@ -1,10 +1,53 @@
-.titreAccueil {
-    text-align: center;
-    margin-top: 15rem;
-    font-size: 3rem;
-    color: var(--dark-slate-grey);
+.accueil {
     height: 100vh;
     background-image: url('../../assets/images/liane_houblon_40.png');
     background-repeat: no-repeat;
     background-position: center;
 }
+
+.titreAccueil {
+    text-align: center;
+    margin-top: 15rem;
+    font-size: 4rem;
+    color: var(--dark-slate-grey);
+    font-family: 'Almendra', cursive;
+    height: 30vh;
+}
+
+.description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:start;
+    height: 70vh;
+}
+
+.image-description {
+    width: 50%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-description img {
+    width: 80%;
+}
+
+.texte-description {
+    width: 50%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: var(--dark-slate-grey);
+}
+
+.lien-description {
+    color: var(--houblon);
+    text-decoration: none;
+}
+
+
