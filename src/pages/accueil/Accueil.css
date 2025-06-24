@@ -1,5 +1,6 @@
 .titreAccueil {
     text-align: center;
-    margin-top: 5rem;
+    margin-top: 15rem;
     font-size: 3rem;
+    color: (--dark-slate-grey);
 }

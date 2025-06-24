@@ -1,16 +1,15 @@
-import { Link } from 'react-router'
 import { TitrePage } from '../../composants/titrePage/TitrePage'
 import './Accueil.css'
+import { Menu } from '../../composants/menu/Menu'
 
 
 export const Accueil = () => {
 
     return (
         <div>
-            <TitrePage titre="Accueil" classe="titreAccueil"/>
+            <Menu />
 
-            
-            <Link to='/produit'>Produit</Link>
+            <TitrePage titre="Accueil" classe="titreAccueil"/>
         </div>
     )
 }

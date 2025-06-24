@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import { Axios } from '../../services/ServiceAppel'
-import { Link } from 'react-router'
 import { TitrePage } from '../../composants/titrePage/TitrePage'
 import { Carte } from '../../composants/carte/Carte'
 import { Recherche } from '../../composants/recherche/Recherche'
 import { Filtre } from '../../composants/filtre/Filtre'
+import { Menu } from '../../composants/menu/Menu'
 import './Produit.css'
 
 export const Produit = () => {
@@ -70,8 +70,8 @@ export const Produit = () => {
 
 	return (
 		<div>
-			<Link to='/'>Accueil</Link>
-
+			<Menu />
+			
 			<TitrePage titre="Produits" classe="titreProduits" />
 
 			<div className="container">
