@@ -15,15 +15,13 @@ export const Produit = () => {
 	const [produitsRecherches, setProduitsRecherches] = useState([]);
 	const [produitsFiltres, setProduitsFiltres] = useState([]);
 	const [produitsAffiches, setProduitsAffiches] = useState([]);
-	const [listeAffichage, setListeAffichage] = useState([]);
+	const [recherche, setRecherche] = useState(false);
 
 	/* Fonction de récupération des produits */
 	const fetchProduits = () => {
 		try {
 			return Axios.get('/produits').then((res) => {
 				setProduits(res.data.member);
-				/* 				setProduitsRecherches(res.data.member);
-								setProduitsFiltres(res.data.member); */
 				setProduitsAffiches(res.data.member);
 			});
 		} catch (error) {
@@ -50,20 +48,19 @@ export const Produit = () => {
 
 	/* Filtre des produits en fonction de la recherche et des filtres */
 	useEffect(() => {
-		if (produitsRecherches.length == 0) {
-			if (produitsFiltres.length == 0) {
-				setProduitsAffiches(produits);
-			}
+		if (produitsRecherches.length == 0 && produitsFiltres.length == 0 && recherche === false) {
+			setProduitsAffiches(produits)
+		} else {
+			if (produitsRecherches.length == 0 && recherche) {
+				setProduitsAffiches([]);
+	}
 			else {
-				setProduitsAffiches(produitsFiltres);
-			}
-		}
-		else {
-			if (produitsFiltres.length == 0) {
-				setProduitsAffiches(produitsRecherches);
-			}
-			else {
-				setProduitsAffiches(produitsRecherches.filter((produit) => produitsFiltres.includes(produit)));
+				if (produitsFiltres.length == 0) {
+					setProduitsAffiches(produitsRecherches);
+				}
+				else {
+					setProduitsAffiches(produitsRecherches.filter((produit) => produitsFiltres.includes(produit)));
+				}
 			}
 		}
 	}, [produitsRecherches, produitsFiltres]);
@@ -71,7 +68,7 @@ export const Produit = () => {
 	return (
 		<div className="pageProduit">
 			<Menu />
-			
+
 			<TitrePage titre="Les produits" classe="titreProduits" />
 
 			<div className="container">
@@ -79,7 +76,7 @@ export const Produit = () => {
 				<div className="rechercheFiltre">
 					<div className="recherche">
 						<h4 className="titreRecherche">Recherche</h4>
-						<Recherche liste={produits} setListe={setProduitsRecherches} />
+						<Recherche liste={produits} setListe={setProduitsRecherches} setRecherche={setRecherche} />
 					</div>
 					<div className="filtre">
 						<h4 className="titreFiltre">Filtre</h4>
