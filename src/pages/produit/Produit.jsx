@@ -68,7 +68,6 @@ export const Produit = () => {
 		}
 	}, [produitsRecherches, produitsFiltres]);
 
-
 	return (
 		<div className="pageProduit">
 			<Menu />
@@ -91,7 +90,7 @@ export const Produit = () => {
 				<div className="grid-container">
 					{produitsAffiches.map((produit, index) => (
 						<div key={index} className={`grid-item ${produit.actif ? "visible" : "invisible"}`}>
-							<Carte nom={produit.nom} description={produit.description} typeProduit={produit.typeProduit.nom} actif={produit.actif} />
+							<Carte nom={produit.nom} description={produit.description} typeProduit={produit.typeProduit.nom} actif={produit.actif} imageName={produit.imageName} classe="imageProduit" />
 						</div>
 					))
 					}

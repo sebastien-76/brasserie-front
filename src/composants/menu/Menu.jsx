@@ -6,9 +6,9 @@ import logo from '../../assets/images/logo.png'
 
 export const Menu = () => {
   return (
-    <div class="menu">
-      <div class="logo">
-        <Link to='/' class="navLien">
+    <div className="menu">
+      <div className="logo">
+        <Link to='/' className="navLien">
           <img src={logo} alt="logo brasserie l'Artésienne" />
         </Link>
       </div>

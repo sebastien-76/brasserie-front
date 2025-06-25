@@ -9,7 +9,6 @@
 .container {
     display: flex;
     width: 100vw;
-    height: 100vh;
     justify-content: space-bet  ween;
 }
 
@@ -78,6 +77,7 @@
 .grid-container {
     width: 80vw;
     margin-right: 3rem;
+    margin-bottom: 5rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
@@ -88,12 +88,16 @@
 }
 
 .grid-item {
+    height: 50vh;
     background-color: var(--orge);
     padding: 10px;
     border-radius: 5px;
     border: 1px solid var(--dark-slate-grey);
     color: var(--dark-slate-grey);
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .grid-item h2 {
@@ -108,4 +112,19 @@
 
 .invisible {
     display: none;
+}
+
+.imageProduit {
+    width: 10vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageProduit img {
+    width: 100%;
+    border: 1px solid var(--houblon);
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px var(--houblon);
 }

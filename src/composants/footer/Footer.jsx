@@ -8,20 +8,20 @@ import tiktok from '../../assets/icones/tiktok.png'
 
 export const Footer = () => {
 	return (
-		<div class="footer">
-			<div class="adresse">
+		<div className="footer">
+			<div className="adresse">
 				<h5>Brasserie L'Artésienne</h5>
 				<p>100 rue d'ici</p>
 				<p>62300 LENS</p>
 			</div>
-			<div class="icones">
+			<div className="icones">
 				<Link to='https://www.facebook.com' target="_blank"><img src={facebook} alt="facebook" /></Link>
 				<Link to='https://www.instagram.com' target="_blank"><img src={instagram} alt="instagram" /></Link>
 				<Link to='https://www.tiktok.com' target="_blank"><img src={tiktok} alt="tiktok" /></Link>
 				<Link to='https://www.linkedin.com' target="_blank"><img src={linkedin} alt="linkedin" /></Link>
 			</div>
-			<div class="mentions">
-				<Link to='#' target="_blank" class="navLien">Mentions Légales</Link>
+			<div className="mentions">
+				<Link to='#' target="_blank" className="navLien">Mentions Légales</Link>
 			</div>
 		</div>
 	)

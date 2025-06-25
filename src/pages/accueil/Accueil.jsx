@@ -11,16 +11,16 @@ export const Accueil = () => {
     return (
         <div>
             <Menu />
-            <div class="accueil">
+            <div className="accueil">
                 <TitrePage titre="Brasserie l'Artésienne" classe="titreAccueil" />
-                <div class="description">
-                    <div class="image-description">
+                <div className="description">
+                    <div className="image-description">
                         <img src={imageDescription} alt="logo brasserie l'Artésienne" />
                     </div>
-                    <div class="texte-description">
+                    <div className="texte-description">
                         <p>Bienvenue !</p>
                         <p>Créée en 2025, la Brasserie l'Artésienne est une histoire de passion.</p>
-                        <p>Venez découvrir <Link to='/produit' class="lien-description">nos produits</Link> et nos services.</p>
+                        <p>Venez découvrir <Link to='/produit' className="lien-description">nos produits</Link> et nos services.</p>
                         <p>Bonne dégustation!</p>
                     </div>
                 </div>
