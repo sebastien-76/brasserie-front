@@ -10,7 +10,7 @@ export const Footer = () => {
 	return (
 		<div className="footer">
 			<div className="adresse">
-				<h5>Brasserie L'Artésienne</h5>
+				<h5>Brasserie</h5>
 				<p>100 rue d'ici</p>
 				<p>62300 LENS</p>
 			</div>

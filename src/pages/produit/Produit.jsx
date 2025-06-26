@@ -53,13 +53,19 @@ export const Produit = () => {
 		} else {
 			if (produitsRecherches.length == 0 && recherche) {
 				setProduitsAffiches([]);
-	}
+			}
 			else {
 				if (produitsFiltres.length == 0) {
 					setProduitsAffiches(produitsRecherches);
 				}
 				else {
-					setProduitsAffiches(produitsRecherches.filter((produit) => produitsFiltres.includes(produit)));
+					if (produitsFiltres.length > 0 && recherche === false) {
+						setProduitsAffiches(produitsFiltres);
+					}
+					else {
+						setProduitsAffiches(produitsRecherches.filter((produit) => produitsFiltres.includes(produit)));
+					}
+
 				}
 			}
 		}
