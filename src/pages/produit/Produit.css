@@ -1,6 +1,6 @@
 .titreProduits {
     text-align: center;
-    margin: 20vh 0 7vh 0;
+    margin: 15rem 0 5rem 0;
     font-size : 3rem;
     color: var(--dark-slate-grey);
     font-family: 'Almendra', cursive;
@@ -9,7 +9,7 @@
 .container {
     display: flex;
     width: 100vw;
-    justify-content: space-bet  ween;
+    justify-content: space-between;
 }
 
 .rechercheFiltre {
@@ -45,7 +45,7 @@
     border: 1px solid var(--dark-slate-grey);
 }
 
-.filtre {
+.filtres {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -60,15 +60,15 @@
     font-family: 'Almendra', cursive;
 }
 
-.listeFiltres {
+.filtre {
     margin-top : 2rem;
 }
 
-.listeFiltres input {
+.filtre input {
     margin-right: 0.5rem;
 }
 
-.listeFiltres label {
+.filtre label {
     font-size: 1.2rem;
     color: var(--dark-slate-grey);
     font-weight: bold;
@@ -127,4 +127,82 @@
     border: 1px solid var(--houblon);
     border-radius: 5px;
     box-shadow: 5px 5px 5px var(--houblon);
+}
+
+@media (max-width: 1024px) {
+    .titreProduits {
+        margin-bottom: 2rem
+    }
+    
+    .container {
+        flex-direction: column;
+    }
+    
+    .rechercheFiltre {
+        width: 100%;
+    }
+
+    .titreRecherche {
+        margin-top: 1rem;
+    }
+
+    .titreFiltre {
+        margin-top: 3rem;
+    }
+
+    .listeFiltres {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 1rem 0 2rem 0;
+        justify-content:center;
+        align-items: center;
+    }
+
+    .filtre {
+        width: 40%;
+        margin: 0.5rem;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        width: 90vw;
+        margin: 0 auto;
+    }
+
+    .grid-item {
+        height: 30vh;
+    }
+
+    .imageProduit {
+        width: 12vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .titreProduits {
+        font-size: 2.5rem;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .titreProduits {
+        margin-top: 15vh;
+    }
+
+    .titreRecherche {
+        margin-top: 0.5rem;
+    }
+
+    .barre-recherche {
+        margin-top: 1rem;
+    }
+
+    .titreFiltre {
+        margin-top: 2rem;
+    }
+
+
 }

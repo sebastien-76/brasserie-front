@@ -3,6 +3,7 @@
     background-image: url('../../assets/images/liane_houblon_40.png');
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 55%;
 }
 
 .titreAccueil {
@@ -50,4 +51,41 @@
     text-decoration: none;
 }
 
+@media (max-width: 1024px) {
+    .accueil {
+        height: 70vh;
+        background-size: 95%;
+    }
 
+    .titreAccueil {
+        height: 10vh;
+    }
+
+    .description {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image-description {
+        width: 80%;
+        height: 25vh;
+    }
+
+    .texte-description {
+        width: 80%;
+        height: 25vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .titreAccueil {
+        height: 5vh;
+        font-size: 2.5rem;
+    }
+
+    .texte-description {
+        font-size: 1.5rem;
+    }
+}
+    

@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import { PrefetchPageLinks } from 'react-router';
 
 export const Filtre = ({ typeProduits, liste, setListe }) => {
 	const [filtre, setFiltre] = useState([]);
@@ -19,11 +18,11 @@ export const Filtre = ({ typeProduits, liste, setListe }) => {
 
 
 	return (
-		<div>
+		<div className="listeFiltres">
 			{
 				typeProduits.map((typeProduit) => {
 					return (
-						<div key={typeProduit.id} className="listeFiltres">
+						<div key={typeProduit.id} className="filtre">
 							<input type="checkbox" name={typeProduit.nom} id={typeProduit.nom} onChange={handleFiltre} />
 							<label htmlFor={typeProduit.nom}>{typeProduit.nom}</label>
 						</div>

@@ -18,7 +18,7 @@
 }
 
 .adresse h5 {
-    font-size: 1.7rem;
+    font-size: 2rem;
     font-weight: bold;
 }
 
@@ -41,4 +41,44 @@
     align-items: center;
     font-size: 1.7rem;
     font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+    .adresse h5 {
+        font-size: 1.7rem;
+    }
+
+    .adresse p {
+        font-size: 1.2rem;
+    }
+
+    .icones img {
+        width: 3rem;
+    }
+
+    .mentions {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .adresse h5 {
+        font-size: 1.3rem;
+    }
+
+    .adresse p {
+        font-size: 1rem;
+    }
+
+    .icones img {
+        width: 1.5rem;
+    }
+
+    .mentions {
+        font-size: 1rem;
+    }
+
+    .mentions .nav_lien {
+        text-align: center;
+    }
 }

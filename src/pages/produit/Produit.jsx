@@ -84,7 +84,7 @@ export const Produit = () => {
 						<h4 className="titreRecherche">Recherche</h4>
 						<Recherche liste={produits} setListe={setProduitsRecherches} setRecherche={setRecherche} />
 					</div>
-					<div className="filtre">
+					<div className="filtres">
 						<h4 className="titreFiltre">Filtre</h4>
 						<Filtre typeProduits={typeProduits} liste={produits} setListe={setProduitsFiltres} />
 					</div>
