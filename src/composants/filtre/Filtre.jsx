@@ -1,20 +1,19 @@
 import React, { useState, useEffect } from 'react'
 
-export const Filtre = ({ typeProduits, liste, setListe }) => {
-	const [filtre, setFiltre] = useState([]);
+export const Filtre = ({ typeProduits, liste, setListe, setFiltre }) => {
+	const [filtres, setFiltres] = useState([]);
 
 	const listeFiltre = () => {
-		return (liste.filter((produit)=> filtre.includes(produit.typeProduit.nom)));
+		return (liste.filter((produit)=> filtres.includes(produit.typeProduit.nom)));
 	}
 
 	const handleFiltre = (e) => {
-		e.target.checked ? setFiltre([...filtre, e.target.name]) : setFiltre(filtre.filter((typeProduit) => typeProduit !== e.target.name));
-		
+		e.target.checked ? (setFiltres([...filtres, e.target.name])) : setFiltres((filtres.filter((typeProduit) => typeProduit !== e.target.name)));
 	}
 
 	useEffect(() => {
-		(filtre.length > 0) ? setListe(listeFiltre()) : setListe(liste);
-	}, [filtre]);
+		(filtres.length > 0) ? (setListe(listeFiltre()), setFiltre(true)) : (setListe(liste), setFiltre(false) );
+	}, [filtres]);
 
 
 	return (

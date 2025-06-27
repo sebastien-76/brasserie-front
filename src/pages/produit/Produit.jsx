@@ -16,6 +16,7 @@ export const Produit = () => {
 	const [produitsFiltres, setProduitsFiltres] = useState([]);
 	const [produitsAffiches, setProduitsAffiches] = useState([]);
 	const [recherche, setRecherche] = useState(false);
+	const [filtre, setFiltre] = useState(false);
 
 	/* Fonction de récupération des produits */
 	const fetchProduits = () => {
@@ -48,25 +49,33 @@ export const Produit = () => {
 
 	/* Filtre des produits en fonction de la recherche et des filtres */
 	useEffect(() => {
-		if (produitsRecherches.length == 0 && produitsFiltres.length == 0 && recherche === false) {
-			setProduitsAffiches(produits)
-		} else {
-			if (produitsRecherches.length == 0 && recherche) {
-				setProduitsAffiches([]);
-			}
-			else {
-				if (produitsFiltres.length == 0) {
-					setProduitsAffiches(produitsRecherches);
-				}
-				else {
-					if (produitsFiltres.length > 0 && recherche === false) {
-						setProduitsAffiches(produitsFiltres);
-					}
-					else {
+		if (recherche) {
+			if (filtre) {
+				if (produitsRecherches.length == 0) {
+					setProduitsAffiches([]);
+				} else {
+					if (produitsFiltres.length == 0) {
+						setProduitsAffiches([]);
+					} else {
 						setProduitsAffiches(produitsRecherches.filter((produit) => produitsFiltres.includes(produit)));
 					}
-
 				}
+			} else {
+				if (produitsRecherches.length == 0) {
+					setProduitsAffiches([]);
+				} else {
+					setProduitsAffiches(produitsRecherches);
+				}
+			}
+		} else {
+			if (filtre) {
+				if (produitsFiltres.length == 0) {
+					setProduitsAffiches([]);
+				} else {
+					setProduitsAffiches(produitsFiltres);
+				}
+			} else {
+				setProduitsAffiches(produits);
 			}
 		}
 	}, [produitsRecherches, produitsFiltres]);
@@ -86,7 +95,7 @@ export const Produit = () => {
 					</div>
 					<div className="filtres">
 						<h4 className="titreFiltre">Filtre</h4>
-						<Filtre typeProduits={typeProduits} liste={produits} setListe={setProduitsFiltres} />
+						<Filtre typeProduits={typeProduits} liste={produits} setListe={setProduitsFiltres} setFiltre={setFiltre} />
 					</div>
 				</div>
 				{/* Grille de présentation des produits */}
