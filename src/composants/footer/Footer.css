@@ -1,6 +1,6 @@
 .footer {
   background-color: var(--houblon);
-  color: var(--orge);
+  color: var(--dark-slate-grey);
   width: 100vw;
   height: 12vh;
   display: flex;
@@ -41,6 +41,11 @@
   align-items: center;
   font-size: 1.7rem;
   font-weight: bold;
+  text-decoration: none;
+}
+
+.mentions .nav_lien {
+  color: var(--dark-slate-grey);
 }
 
 @media (max-width: 1024px) {

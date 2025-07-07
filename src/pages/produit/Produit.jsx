@@ -94,7 +94,6 @@ export const Produit = () => {
         {/* Section de recherche et filtres */}
         <div className="rechercheFiltre">
           <div className="recherche">
-            <h4 className="titreRecherche">Recherche</h4>
             <Recherche
               liste={produits}
               setListe={setProduitsRecherches}

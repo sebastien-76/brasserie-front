@@ -8,7 +8,7 @@ export const Menu = () => {
   return (
     <div className="menu">
       <div className="logo">
-        <Link to="/" className="navLien">
+        <Link to="/" className="nav_lien">
           <img src={logo} alt="logo brasserie l'Artésienne" />
         </Link>
       </div>

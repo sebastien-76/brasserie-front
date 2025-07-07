@@ -25,7 +25,9 @@ export const Recherche = ({ liste, setListe, setRecherche }) => {
 
   return (
     <>
+      <label htmlFor="recherche"><h4 className="titreRecherche">Recherche</h4></label>
       <input
+        id="recherche"
         type="text"
         className="barre-recherche"
         name="recherche"

@@ -18,7 +18,7 @@
   flex-direction: column;
   background-image: url("../../assets/images/liane_houblon_40.png");
   background-repeat: no-repeat;
-  background-position-y: 25%;
+  background-position-y: 10%;
   background-size: contain;
 }
 
@@ -140,6 +140,8 @@
 
   .rechercheFiltre {
     width: 100%;
+    background-image: url("../../assets/images/liane_houblon_40_1024.png");
+    background-position: center;
   }
 
   .titreRecherche {
@@ -183,6 +185,11 @@
   .titreProduits {
     font-size: 2.5rem;
   }
+
+  .rechercheFiltre {
+    background-image: url("../../assets/images/liane_houblon_40_480.png");
+  }
+
 
   .grid-container {
     grid-template-columns: repeat(1, 1fr);

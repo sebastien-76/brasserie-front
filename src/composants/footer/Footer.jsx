@@ -29,7 +29,7 @@ export const Footer = () => {
         </Link>
       </div>
       <div className="mentions">
-        <Link to="#" target="_blank" className="navLien">
+        <Link to="#" target="_blank" className="nav_lien">
           Mentions Légales
         </Link>
       </div>

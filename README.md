@@ -43,3 +43,13 @@ Le second vérifie que la recherche du terme "di" recupère les objets dont le n
 
 Résultat de l'analyse lighthouse : 
 [résultat](https://github.com/sebastien-76/brasserie-front/tree/main/public/images/lighthouse.png)
+
+Axe d'amélioration :
+    - Ajout du label sur l'input de la recherche
+    - Modification de la couleur de texte du footer
+    - Ajout meta description
+
+Il reste les performances à améliorer.
+
+[résultat après amélioration](https://github.com/sebastien-76/brasserie-front/tree/main/public/images/lighthouse_ameliore.png)
+
