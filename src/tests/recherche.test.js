@@ -1,5 +1,6 @@
 import { recherche } from '../utils/recherche';
 import { getProduits } from "./produits.js";
+import { expect, test } from 'vitest';
 
 test('recherche fugiat', async () => {
     // Récupération de tous les produits

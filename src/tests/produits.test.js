@@ -1,5 +1,5 @@
 import { getProduits } from "./produits.js";
-import { expect, test, vi } from 'vitest'
+import { expect, test } from 'vitest'
 
 
 test('should fetch product 1', async () => {
