@@ -1,91 +1,90 @@
 .accueil {
-    height: 100vh;
-    background-image: url('../../assets/images/liane_houblon_40.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 55%;
+  height: 100vh;
+  background-image: url("../../assets/images/liane_houblon_40.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 55%;
 }
 
 .titreAccueil {
-    text-align: center;
-    margin-top: 15rem;
-    font-size: 4rem;
-    color: var(--dark-slate-grey);
-    font-family: 'Almendra', cursive;
-    height: 30vh;
+  text-align: center;
+  margin-top: 15rem;
+  font-size: 4rem;
+  color: var(--dark-slate-grey);
+  font-family: "Almendra", cursive;
+  height: 30vh;
 }
 
 .description {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items:start;
-    height: 70vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: start;
+  height: 70vh;
 }
 
 .image-description {
-    width: 50%;
-    height: 40vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 50%;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .image-description img {
-    width: 80%;
+  width: 80%;
 }
 
 .texte-description {
-    width: 50%;
-    height: 40vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-    color: var(--dark-slate-grey);
+  width: 50%;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: var(--dark-slate-grey);
 }
 
 .lien-description {
-    color: var(--houblon);
-    text-decoration: none;
+  color: var(--houblon);
+  text-decoration: none;
 }
 
 @media (max-width: 1024px) {
-    .accueil {
-        height: 70vh;
-        background-size: 95%;
-    }
+  .accueil {
+    height: 70vh;
+    background-size: 95%;
+  }
 
-    .titreAccueil {
-        height: 10vh;
-    }
+  .titreAccueil {
+    height: 10vh;
+  }
 
-    .description {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+  .description {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .image-description {
-        width: 80%;
-        height: 25vh;
-    }
+  .image-description {
+    width: 80%;
+    height: 25vh;
+  }
 
-    .texte-description {
-        width: 80%;
-        height: 25vh;
-    }
+  .texte-description {
+    width: 80%;
+    height: 25vh;
+  }
 }
 
 @media (max-width: 480px) {
-    .titreAccueil {
-        height: 5vh;
-        font-size: 2.5rem;
-    }
+  .titreAccueil {
+    height: 5vh;
+    font-size: 2.5rem;
+  }
 
-    .texte-description {
-        font-size: 1.5rem;
-    }
+  .texte-description {
+    font-size: 1.5rem;
+  }
 }
-    

@@ -1,84 +1,84 @@
 .footer {
-    background-color: var(--houblon);
-    color: var(--orge);
-    width: 100vw;
-    height: 12vh;
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    bottom: 0;
+  background-color: var(--houblon);
+  color: var(--orge);
+  width: 100vw;
+  height: 12vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 0;
 }
 
 .adresse {
-    width: 25vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .adresse h5 {
-    font-size: 2rem;
-    font-weight: bold;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .adresse p {
-    font-size: 1.5rem;
-    margin: 0.2rem 0 0.2em 0;
+  font-size: 1.5rem;
+  margin: 0.2rem 0 0.2em 0;
 }
 
 .icones {
-    width: 50vw;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  width: 50vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .mentions {
-    width: 25vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.7rem;
-    font-weight: bold;
+  width: 25vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.7rem;
+  font-weight: bold;
 }
 
 @media (max-width: 1024px) {
-    .adresse h5 {
-        font-size: 1.7rem;
-    }
+  .adresse h5 {
+    font-size: 1.7rem;
+  }
 
-    .adresse p {
-        font-size: 1.2rem;
-    }
+  .adresse p {
+    font-size: 1.2rem;
+  }
 
-    .icones img {
-        width: 3rem;
-    }
+  .icones img {
+    width: 3rem;
+  }
 
-    .mentions {
-        font-size: 1.5rem;
-    }
+  .mentions {
+    font-size: 1.5rem;
+  }
 }
 
 @media (max-width: 480px) {
-    .adresse h5 {
-        font-size: 1.3rem;
-    }
+  .adresse h5 {
+    font-size: 1.3rem;
+  }
 
-    .adresse p {
-        font-size: 1rem;
-    }
+  .adresse p {
+    font-size: 1rem;
+  }
 
-    .icones img {
-        width: 1.5rem;
-    }
+  .icones img {
+    width: 1.5rem;
+  }
 
-    .mentions {
-        font-size: 1rem;
-    }
+  .mentions {
+    font-size: 1rem;
+  }
 
-    .mentions .nav_lien {
-        text-align: center;
-    }
+  .mentions .nav_lien {
+    text-align: center;
+  }
 }

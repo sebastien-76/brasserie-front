@@ -1,8 +1,7 @@
 import { getProduits } from "./produits.js";
-import { expect, test } from 'vitest'
+import { expect, test } from "vitest";
 
-
-test('should fetch product 1', async () => {
+test("should fetch product 1", async () => {
   // Récupération de tous les produits
   const produits = await getProduits();
   // Récupération du nom du premier produit
