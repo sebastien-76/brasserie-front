@@ -2,7 +2,7 @@ import { recherche } from "../utils/recherche";
 import { getProduits } from "./produits.js";
 import { expect, test } from "vitest";
 
-test("recherche fugiat", async () => {
+test("recherche di", async () => {
   // Récupération de tous les produits
   const liste = await getProduits();
   // Définition de la chaine recherchée
