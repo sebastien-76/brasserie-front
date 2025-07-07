@@ -1,13 +1,19 @@
 import React, { useEffect, useState } from 'react'
+import { recherche} from '../../utils/recherche';
+
 
 export const Recherche = ({ liste, setListe, setRecherche }) => {
     /* Définition de l'état recherche */
-    const [chaineRecherchee, setChaineRecherchee] = useState(''); 
+    const [chaineRecherchee, setChaineRecherchee] = useState('');
+    const [listeRecherchee, setListeRecherchee] = useState([]);
+
     
     /* Filtre des produits de la liste en fonction de la recherche */
-    const listeRecherche = () => {
-        return (liste.filter((produit) => produit.nom.toLowerCase().includes(chaineRecherchee.toLowerCase())));
-    }
+    useEffect(() => {
+        setListeRecherchee(recherche(chaineRecherchee, liste));
+    }, [chaineRecherchee]);
+    
+
 
     /* Modification de l'état recherche en fonction de l'entrée en input */
     const handleRecherche = (event) => {
@@ -16,8 +22,8 @@ export const Recherche = ({ liste, setListe, setRecherche }) => {
 
     /* Mise à jour de la liste en fonction de la recherche */
     useEffect(() => {
-        chaineRecherchee ? (setListe(listeRecherche()), setRecherche(true)) : (setRecherche(false), setListe(liste));
-    }, [chaineRecherchee]);
+        chaineRecherchee ? (setListe(listeRecherchee), setRecherche(true)) : (setRecherche(false), setListe(liste));
+    }, [listeRecherchee]);
 
     return (
         <>
