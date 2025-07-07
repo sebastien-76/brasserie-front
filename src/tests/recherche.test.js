@@ -6,23 +6,37 @@ test("recherche fugiat", async () => {
   // Récupération de tous les produits
   const liste = await getProduits();
   // Définition de la chaine recherchée
-  const chaineRecherchee = "fugiat";
-  // D2finition du résultat attendu
+  const chaineRecherchee = "di";
+  // Définition du résultat attendu
   const resultat = [
     {
-      "@id": "/api/produits/1",
+      "@id": "/api/produits/3",
       "@type": "Produit",
-      id: 1,
-      nom: "fugiat",
-      description: "Eius illo quia ducimus vitae.",
-      actif: true,
-      typeProduit: {
+      "id": 3,
+      "nom": "repudiandae",
+      "description": "Voluptate nostrum qui voluptates ut ut.",
+      "actif": true,
+      "imageName": "blonde.jpg",
+      "typeProduit": {
         "@id": "/api/type_produits/2",
         "@type": "TypeProduit",
-        nom: "bière ambrée",
+        "nom": "bière ambrée"
       },
-      imageName: "brune.jpg",
     },
+    {
+			"@id": "/api/produits/10",
+			"@type": "Produit",
+			"id": 10,
+			"nom": "modi",
+			"description": "Qui porro ut error ut unde voluptatibus.",
+			"actif": true,
+			"imageName": "brune.jpg",
+			"typeProduit": {
+				"@id": "/api/type_produits/1",
+				"@type": "TypeProduit",
+				"nom": "bière blonde"
+			}
+		}
   ];
 
   // Récupération de la liste recherchée
